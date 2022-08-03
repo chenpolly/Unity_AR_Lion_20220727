@@ -19,11 +19,17 @@ namespace Polly.AR.Vuforia
         
         [SerializeField, Header("跑步按鈕")]
         private Button btnRun;
+
+        [SerializeField, Header("走路按鈕")]
+        private Button btnWalk;
         [SerializeField, Header("虛擬按鈕跳躍")]
         private VirtualButtonBehaviour vbbJump;
 
         private string parFloat = "觸發飄浮";
         private string parWalk = "走路";
+        private string parJump = "觸發跳躍";
+        private string parRun = "觸發跑步";
+        
         private AudioSource audBGM;
 
         private void Awake()
@@ -31,13 +37,16 @@ namespace Polly.AR.Vuforia
             observerKID.OnTargetFound.AddListener(CardFound);
             observerKID.OnTargetLost.AddListener(CardLost);
             btnRun.onClick.AddListener(Run);
+            btnWalk.onClick.AddListener(Walk);
             vbbJump.RegisterOnButtonPressed(OnJumpPressed);
             audBGM = GameObject.Find("BGM").GetComponent<AudioSource>();
+
         }
 
         private void OnJumpPressed(VirtualButtonBehaviour obj)
         {
             print("<color=#3366dd>跳躍~</color>");
+            Astronaut.SetTrigger(parJump);
         }
 
         /// <summary>
@@ -47,7 +56,7 @@ namespace Polly.AR.Vuforia
         {
             print("<color=yellow> 找到卡片</color>");
             Astronaut.SetTrigger(parFloat);
-            Astronaut.SetBool(parWalk, true);
+            
             audBGM.Play();
         }
         /// <summary>
@@ -60,7 +69,13 @@ namespace Polly.AR.Vuforia
         }
         private void Run()
         {
-            print("<color=#5566aa>Run~</color>");
+            print("<color=#5566aa> Run~ </color>");
+            Astronaut.SetTrigger(parRun);
+        }
+        private void Walk()
+        {
+            print("<color=#006666> Walk </color>");
+            Astronaut.SetBool(parWalk, true);
         }
 
     }

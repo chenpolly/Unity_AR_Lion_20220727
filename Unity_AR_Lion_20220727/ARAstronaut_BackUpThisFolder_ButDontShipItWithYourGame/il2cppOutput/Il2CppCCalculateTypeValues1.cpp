@@ -13581,8 +13581,12 @@ struct CardManager_t803F97B3900B1A15E407CAE532896C6278022113  : public MonoBehav
 	String_t* ___parFloat_8;
 	// System.String Polly.AR.Vuforia.CardManager::parWalk
 	String_t* ___parWalk_9;
+	// System.String Polly.AR.Vuforia.CardManager::parJump
+	String_t* ___parJump_10;
+	// System.String Polly.AR.Vuforia.CardManager::parRun
+	String_t* ___parRun_11;
 	// UnityEngine.AudioSource Polly.AR.Vuforia.CardManager::audBGM
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___audBGM_10;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___audBGM_12;
 };
 
 // DefaultObserverEventHandler

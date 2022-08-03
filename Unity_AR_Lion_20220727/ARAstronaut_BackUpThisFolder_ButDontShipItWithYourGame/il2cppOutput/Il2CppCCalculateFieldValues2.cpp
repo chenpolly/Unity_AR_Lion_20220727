@@ -5740,8 +5740,12 @@ struct CardManager_t803F97B3900B1A15E407CAE532896C6278022113  : public MonoBehav
 	String_t* ___parFloat_8;
 	// System.String Polly.AR.Vuforia.CardManager::parWalk
 	String_t* ___parWalk_9;
+	// System.String Polly.AR.Vuforia.CardManager::parJump
+	String_t* ___parJump_10;
+	// System.String Polly.AR.Vuforia.CardManager::parRun
+	String_t* ___parRun_11;
 	// UnityEngine.AudioSource Polly.AR.Vuforia.CardManager::audBGM
-	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___audBGM_10;
+	AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299* ___audBGM_12;
 };
 
 // DefaultObserverEventHandler
@@ -6787,9 +6791,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6477[6] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6478[9] = 
 {
 	0,0,static_cast<int32_t>(offsetof(ThirdPersonCamera_tF767EACAF9F7717E2752064876830BFF30DED188, ___lookAt_6)),static_cast<int32_t>(offsetof(ThirdPersonCamera_tF767EACAF9F7717E2752064876830BFF30DED188, ___camTransform_7)),static_cast<int32_t>(offsetof(ThirdPersonCamera_tF767EACAF9F7717E2752064876830BFF30DED188, ___distance_8)),static_cast<int32_t>(offsetof(ThirdPersonCamera_tF767EACAF9F7717E2752064876830BFF30DED188, ___currentX_9)),static_cast<int32_t>(offsetof(ThirdPersonCamera_tF767EACAF9F7717E2752064876830BFF30DED188, ___currentY_10)),static_cast<int32_t>(offsetof(ThirdPersonCamera_tF767EACAF9F7717E2752064876830BFF30DED188, ___sensitivityX_11)),static_cast<int32_t>(offsetof(ThirdPersonCamera_tF767EACAF9F7717E2752064876830BFF30DED188, ___sensitivityY_12)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6479[7] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6479[9] = 
 {
-	static_cast<int32_t>(offsetof(CardManager_t803F97B3900B1A15E407CAE532896C6278022113, ___observerKID_4)),static_cast<int32_t>(offsetof(CardManager_t803F97B3900B1A15E407CAE532896C6278022113, ___Astronaut_5)),static_cast<int32_t>(offsetof(CardManager_t803F97B3900B1A15E407CAE532896C6278022113, ___btnRun_6)),static_cast<int32_t>(offsetof(CardManager_t803F97B3900B1A15E407CAE532896C6278022113, ___vbbJump_7)),static_cast<int32_t>(offsetof(CardManager_t803F97B3900B1A15E407CAE532896C6278022113, ___parFloat_8)),static_cast<int32_t>(offsetof(CardManager_t803F97B3900B1A15E407CAE532896C6278022113, ___parWalk_9)),static_cast<int32_t>(offsetof(CardManager_t803F97B3900B1A15E407CAE532896C6278022113, ___audBGM_10)),};
+	static_cast<int32_t>(offsetof(CardManager_t803F97B3900B1A15E407CAE532896C6278022113, ___observerKID_4)),static_cast<int32_t>(offsetof(CardManager_t803F97B3900B1A15E407CAE532896C6278022113, ___Astronaut_5)),static_cast<int32_t>(offsetof(CardManager_t803F97B3900B1A15E407CAE532896C6278022113, ___btnRun_6)),static_cast<int32_t>(offsetof(CardManager_t803F97B3900B1A15E407CAE532896C6278022113, ___vbbJump_7)),static_cast<int32_t>(offsetof(CardManager_t803F97B3900B1A15E407CAE532896C6278022113, ___parFloat_8)),static_cast<int32_t>(offsetof(CardManager_t803F97B3900B1A15E407CAE532896C6278022113, ___parWalk_9)),static_cast<int32_t>(offsetof(CardManager_t803F97B3900B1A15E407CAE532896C6278022113, ___parJump_10)),static_cast<int32_t>(offsetof(CardManager_t803F97B3900B1A15E407CAE532896C6278022113, ___parRun_11)),static_cast<int32_t>(offsetof(CardManager_t803F97B3900B1A15E407CAE532896C6278022113, ___audBGM_12)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable6481[1] = 
 {
 	static_cast<int32_t>(offsetof(DataContractAttribute_tD065D7D14CC8AA548815166AB8B8210D1B3C699F, ___isReference_0)),};
